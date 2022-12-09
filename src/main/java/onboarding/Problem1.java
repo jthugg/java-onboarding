@@ -38,4 +38,8 @@ class Problem1 {
 		}
 		return validateEvenOdd(pobi, crong);
 	}
+
+	private static boolean validateEvenOdd(List<Integer> pobi, List<Integer> crong) {
+		return pobi.get(0) % 2 == 1 && crong.get(0) % 2 == 1 && pobi.get(1) % 2 == 0 && crong.get(1) == 0;
+	}
 }
