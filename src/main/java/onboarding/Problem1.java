@@ -78,4 +78,14 @@ class Problem1 {
 		}
 		return mul;
 	}
+
+	private static int compareNumbers(int bestChoiceOfPobi, int bestChoiceOfCrong) {
+		if (bestChoiceOfPobi > bestChoiceOfCrong) {
+			return 1;
+		}
+		if (bestChoiceOfPobi == bestChoiceOfCrong) {
+			return 0;
+		}
+		return 2;
+	}
 }
