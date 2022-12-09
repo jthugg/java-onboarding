@@ -12,7 +12,7 @@ class Problem1 {
 	}
 
 	private static boolean validatePobiAndCrong(List<Integer> pobi, List<Integer> crong) {
-		if (validateLength(pobi, crong) || validateHasCoverPage(pobi, crong) || validatePage(pobi, crong)) {
+		if (validateLength(pobi, crong) || validateHasCoverPage(pobi, crong) || validatePageContinuous(pobi, crong)) {
 			return true;
 		}
 		return false;
@@ -30,5 +30,12 @@ class Problem1 {
 			return true;
 		}
 		return false;
+	}
+
+	private static boolean validatePageContinuous(List<Integer> pobi, List<Integer> crong) {
+		if (pobi.get(1) - pobi.get(0) != 1 || crong.get(1) - crong.get(0) != 1) {
+			return true;
+		}
+		return validateEvenOdd(pobi, crong);
 	}
 }
