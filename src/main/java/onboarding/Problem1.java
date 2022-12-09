@@ -17,4 +17,11 @@ class Problem1 {
 		}
 		return false;
 	}
+
+	private static boolean validateLength(List<Integer> pobi, List<Integer> crong) {
+		if (pobi.size() != 2 || crong.size() != 2) {
+			return true;
+		}
+		return false;
+	}
 }
