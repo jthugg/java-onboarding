@@ -12,6 +12,10 @@ public class Problem2 {
 		return cryptogram;
 	}
 
+	private static boolean hasDuplicatedPart(String cryptogram) {
+		return getDuplicatedPart(cryptogram).size() > 0;
+	}
+
 	private static List<String> getDuplicatedPart(String cryptogram) {
 		List<String> duplicatedParts = new ArrayList<>();
 		String duplicatedPart = String.valueOf(cryptogram.charAt(0));
