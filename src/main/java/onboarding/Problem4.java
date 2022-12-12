@@ -20,4 +20,12 @@ public class Problem4 {
 		}
 		return spell;
 	}
+
+	private static boolean isUpperCase(char spell) {
+		return spell >= 65 && spell <= 90;
+	}
+
+	private static boolean isLowerCase(char spell) {
+		return spell >= 97 && spell <= 122;
+	}
 }
