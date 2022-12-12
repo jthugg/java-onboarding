@@ -12,4 +12,13 @@ public class Problem3 {
 		}
 		return countClap;
 	}
+
+	private static int count369(String eachNumber, int countClap) {
+		for(int i = 0; i < eachNumber.length(); i++) {
+			if(eachNumber.charAt(i) == '3' || eachNumber.charAt(i) == '6' || eachNumber.charAt(i) == '9') {
+				countClap++;
+			}
+		}
+		return countClap;
+	}
 }
