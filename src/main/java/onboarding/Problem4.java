@@ -28,4 +28,18 @@ public class Problem4 {
 	private static boolean isLowerCase(char spell) {
 		return spell >= 97 && spell <= 122;
 	}
+
+	private static char convertLowerCase(char spell) {
+		if(spell <= 'm') {
+			return (char) ('n' + ('m' - spell));
+		}
+		return (char) ('m' - (spell - 'n'));
+	}
+
+	private static char convertUpperCase(char spell) {
+		if(spell <= 'M') {
+			return (char) ('N' + ('M' - spell));
+		}
+		return (char) ('M' - (spell - 'N'));
+	}
 }
